@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushkar Pal - Portfolio</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h1>Pushkar Pal</h1>
+            <h2>Trainee Decision Scientist</h2>
+            <p>"Data enthusiast focused on building impactful solutions."</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! My name is Pushkar Pal, a recent Biotechnology graduate from SRM Chennai (CGPA: 9.09) who has successfully transitioned into the world of data, now working as a Decision Scientist Trainee at Mu Sigma in Bangalore. My academic journey was defined by proactive leadership and impactful innovation; I was a founding member of our department's first club, 'Bionauts,' and led the Motion Media department. My passion for sustainable solutions was recognized with the 1st Prize at Project Day 2024 for 'Dhaan Prakalpa,' which created packaging from rice straw to combat pollution. This was followed by a government-granted minor project on developing dyes and packaging from mycelium. I further demonstrated my capabilities by representing my college during the NAAC visit for startup innovation, showcasing my project at IIT Madras's IIT PALS, and winning the Best Presentation Award from the Chennai Research Foundation for my final year project. My practical experience includes a 45-day internship in the Chemical Engineering department at IIT Guwahati, where I honed my analytical skills using Excel, paving the way for my current career crafting data-driven decisions.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skill">
+                <h3>MySQL</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%;">80%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Excel / Data Analysis</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%;">80%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Presentation</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%;">80%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 60%;">60%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Download Section -->
+    <section id="resume">
+        <div class="container">
+            <h2>My Resume</h2>
+            <p>Feel free to download my resume to learn more about my experience, skills, and achievements in a detailed format.</p>
+            <a href="resume.pdf.pdf" download class="btn resume-btn">
+                <i class="fas fa-download"></i> Download Resume (PDF)
+            </a>
+        </div>
+    </section>
+
+    <!-- Projects/Achievements Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects & Achievements</h2>
+            <div class="project-grid">
+                <div class="project-item reveal">
+                    <h3>Dhaan Prakalpa</h3>
+                    <p>Won 1st Prize at Project Day 2024 for creating sustainable packaging material from rice straw, addressing agricultural waste and pollution.</p>
+                </div>
+                <div class="project-item reveal">
+                    <h3>Mycelium-based Solutions</h3>
+                    <p>Grant-funded project developing sustainable dyes and temporary construction materials using mycelium networks.</p>
+                </div>
+                <div class="project-item reveal">
+                    <h3>Best Presentation Award</h3>
+                    <p>Won the Best Presentation award for our final year project from the Chennai Research Foundation (2025).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Let's Connect!</h2>
+            <p>I'm always open to discussing new opportunities and ideas.</p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/pushkar-pal-b60506211/" target="_blank" class="btn">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:pushkarpal2003@hotmail.com" class="btn">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Pushkar Pal. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll Reveal Animation -->
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        reveal();
+    </script>
+</body>
+</html>
